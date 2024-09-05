@@ -16,7 +16,7 @@ Compile yourself using `cargo build --release`, or download the precompiled bina
 
 For Arch Linux, use the [AUR](https://aur.archlinux.org/packages/wttrbar) package.
 
-For NixOS, use the [NixPkg](https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/wttrbar/default.nix) package.
+For NixOS, use the [NixPkg](https://search.nixos.org/packages?channel=24.05&show=wttrbar&from=0&size=50&sort=relevance&type=packages&query=wttrbar) package.
 
 ## Usage
 
@@ -28,7 +28,7 @@ For NixOS, use the [NixPkg](https://github.com/NixOS/nixpkgs/blob/master/pkgs/ap
 - `--fahrenheit` - use fahrenheit instead of celsius
 - `--mph` - use mph instead of km/h for wind speed
 - `--custom-indicator STRING` - optional expression that will be shown instead of main indicator. current_conditions keys surrounded by {} can be used. For example, `"{ICON}{temp_C}({FeelsLikeC})"` will be transformed to `"text":"🌧️0(-4)"` in the output
-- `--lang LANG` - set language (currently `en`, `de`, `pl`, `tr`, `fr`, `ru`, `zh`, `be`, `es`, `pt`, `it`, `ja`, `uk`; submit a PR to add yours)
+- `--lang LANG` - set language (currently `en`, `de`, `pl`, `tr`, `fr`, `ru`, `zh`, `be`, `es`, `pt`, `it`, `ja`, `uk`, `sv`; submit a PR to add yours)
 
 e.g. `wttrbar --date-format "%m/%d" --location Paris --hide-conditions`
 
